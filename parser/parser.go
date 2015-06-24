@@ -10,7 +10,7 @@ import (
 	"os"
 	"sort"
 	"strings"
-	. "github.com/t-yuki/godoc2puml/ast"
+	. "github.com/grmartin/godoc2puml/ast"
 )
 
 func ParsePackage(packagePath string, fieldPackages ...string) (*Package, error) {

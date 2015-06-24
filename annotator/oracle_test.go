@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/t-yuki/godoc2puml/annotator"
-	"github.com/t-yuki/godoc2puml/parser"
+	"github.com/grmartin/godoc2puml/annotator"
+	"github.com/grmartin/godoc2puml/parser"
 )
 
 func TestOracleCGo(t *testing.T) {
-	pkg, err := parser.ParsePackage("github.com/t-yuki/godoc2puml/annotator/testdata/cgo")
+	pkg, err := parser.ParsePackage("github.com/grmartin/godoc2puml/annotator/testdata/cgo")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -22,7 +22,7 @@ func TestOracleCGo(t *testing.T) {
 }
 
 func TestOracleCGoImport(t *testing.T) {
-	pkg, err := parser.ParsePackage("github.com/t-yuki/godoc2puml/annotator/testdata/cgoimport")
+	pkg, err := parser.ParsePackage("github.com/grmartin/godoc2puml/annotator/testdata/cgoimport")
 	if err != nil {
 		t.Fatal(err)
 	}

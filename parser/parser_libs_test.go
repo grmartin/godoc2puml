@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/t-yuki/godoc2puml/parser"
+	"github.com/grmartin/godoc2puml/parser"
 )
 
 func TestParsePackage_IO(t *testing.T) {

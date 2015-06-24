@@ -8,7 +8,7 @@ Installation
 
 Just type the following to install the program:
 
-    $ go get -u github.com/t-yuki/godoc2puml
+    $ go get -u github.com/grmartin/godoc2puml
 
 If you want to draw a diagram as a image file, it depends on java and graphviz. you must install them:
 
@@ -63,3 +63,4 @@ Authors
 -------
 
 * [Yukinari Toyota (t-yuki)](https://github.com/t-yuki)
+* [Glenn Martin (grmartin)](https://github.com/grmartin)

@@ -12,7 +12,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
-	. "github.com/t-yuki/godoc2puml/ast"
+	. "github.com/grmartin/godoc2puml/ast"
 )
 
 type typeVisitor struct {

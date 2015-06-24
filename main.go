@@ -11,10 +11,10 @@ import (
 
 	"go/build"
 
-	"github.com/t-yuki/godoc2puml/annotator"
-	"github.com/t-yuki/godoc2puml/ast"
-	"github.com/t-yuki/godoc2puml/parser"
-	"github.com/t-yuki/godoc2puml/printer"
+	"github.com/grmartin/godoc2puml/annotator"
+	"github.com/grmartin/godoc2puml/ast"
+	"github.com/grmartin/godoc2puml/parser"
+	"github.com/grmartin/godoc2puml/printer"
 )
 
 type Config struct {

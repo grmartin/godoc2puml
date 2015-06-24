@@ -1,6 +1,6 @@
 package annotator
 
-import "github.com/t-yuki/godoc2puml/ast"
+import "github.com/grmartin/godoc2puml/ast"
 
 func Cut(scope *ast.Scope) error {
 	backproj := buildBackProjections(scope)

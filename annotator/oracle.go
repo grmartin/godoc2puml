@@ -5,10 +5,10 @@ import (
 	"go/build"
 	"log"
 
-	"code.google.com/p/go.tools/go/loader"
-	"code.google.com/p/go.tools/oracle"
-	"code.google.com/p/go.tools/oracle/serial"
-	"github.com/t-yuki/godoc2puml/ast"
+	"github.com/fzipp/pythia/internal/tools/go/loader"
+	"github.com/fzipp/pythia/internal/tools/oracle"
+	"github.com/fzipp/pythia/internal/tools/oracle/serial"
+	"github.com/grmartin/godoc2puml/ast"
 )
 
 // Oracle annotates `pkg` using go.tools/oracle interface implements detector.
@@ -17,7 +17,7 @@ import (
 func Oracle(pkg *ast.Package, scopes ...string) error {
 	settings := build.Default
 	settings.BuildTags = []string{} // TODO
-	conf := loader.Config{Build: &settings, SourceImports: true}
+	conf := loader.Config{Build: &settings}
 
 	withTests := false
 	if len(scopes) == 0 {

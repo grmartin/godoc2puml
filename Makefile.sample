@@ -6,7 +6,7 @@ all: $(addsuffix .png, $(PACKAGES)) godoc2puml.png all.net.png all.net.http.png 
 .PRECIOUS: %.puml
 
 godoc2puml.puml: FORCE
-	./godoc2puml -scope=github.com/t-yuki/godoc2puml github.com/t-yuki/godoc2puml/... > $@
+	./godoc2puml -scope=github.com/grmartin/godoc2puml github.com/grmartin/godoc2puml/... > $@
 
 all.net.puml: FORCE
 	./godoc2puml -field=bufio,io,fmt,sync,time,reflect, -lolipop=bufio,io,fmt,sync,reflect, net net/http net/mail net/rpc net/smtp net/textproto net/url | grep -v -- '-() "io' > $@
